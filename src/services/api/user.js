@@ -1,7 +1,8 @@
 import apiClient from "./client";
 
-// const login = (phonenumber) => apiClient.post('/users/otplogin', { phonenumber })
+
+const login = (email, password) => apiClient.post('/users/login', { email, password })
 
 export default {
-    // login,
+    login
 };
